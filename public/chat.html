@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.min.css">
+</head>
+
+<body>
+
+    <div class="chat">
+        <div id="room-data" class="chat__sidebar">
+            <!-- <h1 class="room-title"></h1>
+            <h3 class="list-title"></h3>
+            <li class="users"></li> -->
+        </div>
+
+        <div class="chat__main">
+
+            <div class="chat__messages">
+                <div id="messages" class="message">
+                    <!-- <div>
+                        <p>
+                            <span class="message__name">Some user name</span>
+                            <span class="message__meta">${time}</span>
+                        </p>
+                        <p>${message.text}</p>
+                    </div> -->
+                    <!-- <div>
+                        <p>
+                            <span class="message__name">Some user name</span>
+                            <span class="message__meta">${time}</span>
+                        </p>
+                        <p><a href="${message.url}" target="_blank">My current Location</a></p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="compose">
+                <form>
+                    <input type="text" id="chatMessage" placeholder="Message..." autocomplete="off">
+                    <button type="submit" id="send-message">Send</button>
+                </form>
+                <button id="send-location">Send Location</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>
